@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#ff5f01</color>
+    <color name="colorPrimaryDimmed">#85FFC600</color>
+    <color name="colorPrimaryTrans">#80000000</color>
+    <color name="colorPrimaryDark">#FFC600</color>
+    <color name="colorAccent">#006aa0</color>
+    <color name="colorTextSecondary">#035b75</color>
+    <color name="shadow_green">#9C1AB920</color>
+    <color name="shadow_red">#F44336</color>
+    <color name="trans">#CCFFC600</color>
+    <color name="grey">#c4c4c4</color>
+    <color name="backgroundCharactersList">#1b1b1b</color>
+
+    <color name="appBlack">#000000</color>
+    <color name="theme_black">#000000</color>
+    <color name="appWhite">#FFFFFF</color>
+    <color name="appGreyTextDisable">#919191</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
