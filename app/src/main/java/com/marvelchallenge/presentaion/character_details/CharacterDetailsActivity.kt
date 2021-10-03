@@ -80,9 +80,9 @@ class CharacterDetailsActivity : AppCompatActivity(), CharacterDetailsUseCases.V
         recyclerViewComics.adapter = adapterComics
 
         val adapterEvents = EventsAdapter(this,this,listOfEvents)
-        recyclerViewComics.adapter = adapterEvents
+        recyclerViewEvents.adapter = adapterEvents
 
-        Log.d("listComics", (listComics).toString())
+        Log.d("listComics", (listOfEvents).toString() + " ")
 
         textView.text = data.get(0).title
         if (!data.get(0).description.isEmpty()) {

@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.marvelchallenge.R
 import com.marvelchallenge.data.entities.characters.characterdetailsresponse.Events
-import com.marvelchallenge.data.entities.characters.characterdetailsresponse.ItemsItem
 
 class EventsAdapter(context: Context, activity: Activity, events: List<Events>) :
     RecyclerView.Adapter<EventsAdapter.ComicsViewHolder>() {
@@ -31,9 +30,9 @@ class EventsAdapter(context: Context, activity: Activity, events: List<Events>) 
 
     override fun onBindViewHolder(holder: EventsAdapter.ComicsViewHolder, position: Int) {
         val itemList = mData!![position]
-        Log.d("languageList", " mData : " + itemList.items?.get(0)?.name)
+        Log.d("languageList", " mData Events : " + itemList.items?.get(0)?.name)
 
-        mContext?.let { Glide.with(it).load(itemList.items?.get(0)?.resourceURI+".jpg").into(holder.ComicImage) }
+//        mContext?.let { Glide.with(it).load(itemList.items?.get(0)?.resourceURI+".jpg").into(holder.ComicImage) }
 
         holder.ComicName.setText(itemList.items?.get(0)?.name)
 
