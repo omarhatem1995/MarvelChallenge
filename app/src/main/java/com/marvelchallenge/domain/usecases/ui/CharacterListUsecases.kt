@@ -6,15 +6,15 @@ import com.marvelchallenge.data.entities.characters.CharacterResponse.CharacterR
 import com.marvelchallenge.domain.entities.marvel.CharacterDomainModel
 
 interface CharacterListUsecases {
-    interface  View{
-        fun  renderDetails(CharacterDomainModel: CharacterDomainModel)
-        fun  renderLoading(show: Boolean)
+    interface View {
+        fun renderDetails(CharacterDomainModel: CharacterDomainModel)
+        fun renderLoading(show: Boolean)
         fun renderNetworkFailure()
         fun renderCharacterList(data: List<CharacterDomainModel>)
     }
 
-    interface GetCharacterListUsecase{
-        suspend fun  invoke() : ApiResponse<CharacterResponse, CharacterErrorResponse>
+    interface GetCharacterListUsecase {
+        suspend fun invoke(): ApiResponse<CharacterResponse, CharacterErrorResponse>
     }
 
 }

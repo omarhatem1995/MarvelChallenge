@@ -10,12 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MarvelChallenge">
-        <activity android:name=".presentaion.characters_list.CharachtersListActivity">
-              <intent-filter>
+        <activity android:name=".presentaion.characters_list.CharactersListActivity">
+              <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".presentaion.SplashActivity">
       <!--      <intent-filter>
@@ -23,6 +23,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
+        </activity>
+        <activity android:name=".presentaion.character_details.CharacterDetailsActivity">
+                  <intent-filter>
+                      <action android:name="android.intent.action.MAIN" />
+
+                      <category android:name="android.intent.category.LAUNCHER" />
+                  </intent-filter>
         </activity>
     </application>
 

@@ -11,7 +11,7 @@ import com.marvelchallenge.domain.entities.marvel.CharacterDomainModel
 import com.marvelchallenge.domain.usecases.ui.CharacterListUsecases
 import com.marvelchallenge.presentaion.entities.character.CharacterViewState
 
-class CharachtersListActivity : AppCompatActivity()  , CharacterListUsecases.View{
+class CharactersListActivity : AppCompatActivity()  , CharacterListUsecases.View{
     val  viewModel  by viewModels<CharactersListViewModel>()
     lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {

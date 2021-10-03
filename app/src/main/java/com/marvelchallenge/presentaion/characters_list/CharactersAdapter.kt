@@ -35,7 +35,7 @@ class CharactersAdapter(context: Context, activity: Activity, characters: List<C
         val itemList = mData!![position]
         Log.d("languageList", " mData : " + itemList.imgUrl)
 
-        mContext?.let { Glide.with(it).load(itemList.imgUrl).override(50, 50).into(holder.characterImage) }
+        mContext?.let { Glide.with(it).load(itemList.imgUrl+"."+itemList.imgExtension).into(holder.characterImage) }
         holder.characterName.setText(itemList.title)
 
         holder.characterImage.setOnClickListener{

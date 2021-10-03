@@ -6,6 +6,7 @@ import com.marvelchallenge.domain.entities.marvel.CharacterDomainModel
 
 fun  List<ResultsItem>?.toCharacterDomainModelList(): List<CharacterDomainModel>? {
     return this?.map {
-        CharacterDomainModel(it.id , it.name , it.thumbnail?.path)
+        CharacterDomainModel(it.id , it.name , it.thumbnail?.path,it.thumbnail?.extension)
     }
 }
+

@@ -1,4 +1,4 @@
-package com.marvelchallenge.data.gateways.remote.charachter_gateway
+package com.marvelchallenge.data.gateways.remote.character_gateway
 
 import com.marvelchallenge.data.core.NetworkResponseFactory.ApiResponseAdapterFactory
 import com.marvelchallenge.data.core.ServiceCore
