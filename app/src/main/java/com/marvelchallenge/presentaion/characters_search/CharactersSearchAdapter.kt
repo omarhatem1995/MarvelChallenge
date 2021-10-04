@@ -1,4 +1,4 @@
-package com.marvelchallenge.presentaion.characters_list
+package com.marvelchallenge.presentaion.characters_search
 
 import android.app.Activity
 import android.content.Context
@@ -16,24 +16,23 @@ import com.bumptech.glide.Glide
 import com.marvelchallenge.R
 import com.marvelchallenge.domain.entities.marvel.CharacterDomainModel
 
-class CharactersAdapter(context: Context, activity: Activity, characters: List<CharacterDomainModel>?) :
-    RecyclerView.Adapter<CharactersAdapter.CharactersViewHolder>() {
+class CharactersSearchAdapter(context: Context, characters: List<CharacterDomainModel>?) :
+    RecyclerView.Adapter<CharactersSearchAdapter.CharactersViewHolder>() {
     var mContext: Context? = context
-    var activity: Activity? = activity
     var mData: List<CharacterDomainModel>? = characters
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): CharactersAdapter.CharactersViewHolder {
+    ): CharactersSearchAdapter.CharactersViewHolder {
         val v: View
-        v = LayoutInflater.from(mContext).inflate(R.layout.character_list_item, parent, false)
+        v = LayoutInflater.from(mContext).inflate(R.layout.searching_item, parent, false)
         return CharactersViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: CharactersAdapter.CharactersViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CharactersSearchAdapter.CharactersViewHolder, position: Int) {
         val itemList = mData!![position]
-        Log.d("languageList", " mData : " + itemList.id)
+        Log.d("languageList", " mData : " + itemList.imgUrl)
 
         mContext?.let { Glide.with(it).load(itemList.imgUrl+"."+itemList.imgExtension).into(holder.characterImage) }
         holder.characterName.setText(itemList.title)
